@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import "./playList.css";
 const Song = (props) => {
   const { song } = props;
@@ -11,6 +11,15 @@ const Song = (props) => {
       <p>{genre}</p>
     </article>
   );
+};
+
+Song.propTypes = {
+  song: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    artist: PropTypes.string.isRequired,
+    genre: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+  }),
 };
 
 export default Song;

@@ -1,9 +1,8 @@
-import RockPaperScissors from "./components/RockPaperScissors/RockPaperScissors";
-
+import GamesList from "./components/GamesList/GamesList";
 function App() {
   return (
     <>
-    <RockPaperScissors/>
+      <GamesList />
     </>
   );
 }
